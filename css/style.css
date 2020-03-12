@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
+html,body{
+    font: 16px sans-serif;
+    margin:0;
+}
+h1,h2,p,ol{
+    margin: 0;
+    font-weight: 300;
+    list-style-type: none;
+    padding:0;
+
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color-title: rgba(0, 0, 255,1.0);
+    --color-star:  rgba(231, 76, 60,1.0);
+    --color-shadow: rgb(2,2,2);
+}
+html{
+    background: url(../asset/fond.png) no-repeat fixed center center/cover;
+    scroll-behavior: smooth;
+}
+
+section>img{
+    display: block;
+    max-width: 800px;
+    width: 100%;
+}
+li{
+    margin: 20px;
+}
+h2{
+    background: var(--color-title);
+    border-radius: 5px;
+    color: #fafafa;
+    border:solid 2px var(--color-title);
+    position: sticky;
+    top:0;
+    left:0;
+}
+h2::after{
+    content: '  \203A';
+}
+main{
+    max-width: 800px;
+    margin: 50px auto 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    box-shadow: 0 0 50px var(--color-shadow) ;
+}
+h1{
+    text-align: center;
+    padding: 30px;
+}
+h1::before{
+    content: '\2605   ';
+    color: var(--color-star);
+
+}
+header h1{
+    font-size: 2.5rem;
+}
+header h1, section h2{
+    font-family: 'Zhi Mang Xing', cursive;
+}
+footer{
+    text-align: center;
+}
+section > p, section > img{
+   margin: 20px auto;
+}
+section > p{
+    line-height: 1.5rem;
+}
+.bookmark:target{
+    background: rgba(231, 76, 60,1.0);
+    border-color: rgba(231, 76, 60,1.0);
+    color: #fafafa;
+}
+
+
